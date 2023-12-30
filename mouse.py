@@ -1,7 +1,4 @@
-
-
 from tkinter import VERTICAL
-
 import sys, math
 from direct.showbase.ShowBase import ShowBase
 from pandac.PandaModules import *
@@ -139,8 +136,6 @@ class MyApp(ShowBase):
                         shadow=(0, 0, 0, 1), align=TextNode.ALeft, font = self.font)
 
     def update(self, task):
-
-
         if not keyMap2["shift"]:
             self.point2 = False
             color = (1,1,1,1)
@@ -181,8 +176,6 @@ class MyApp(ShowBase):
                 render2d.attachNewNode(self.segsnode)
                 # print(x,y)
 
-
-
             return task.cont
         if not self.point2:
             if self.mouseWatcherNode.hasMouse():
@@ -197,9 +190,5 @@ class MyApp(ShowBase):
         return task.cont
 
             
-
-
-
-
 app = MyApp()
 app.run()
